@@ -1,4 +1,4 @@
-package com.example.ceepws.models
+package com.example.apirest.models
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import javax.persistence.Entity
@@ -13,3 +13,4 @@ data class Note(
     val id: Long = 0L,
     val title: String = "",
     val description: String = "",
+)

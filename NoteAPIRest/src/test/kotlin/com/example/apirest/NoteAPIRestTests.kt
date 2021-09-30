@@ -1,14 +1,13 @@
-package com.example.ceepws
+package com.example.apirest
 
-import com.example.ceepws.models.Note
-import com.example.ceepws.repositories.NoteRepository
+import com.example.apirest.models.Note
+import com.example.apirest.repositories.NoteRepository
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.boot.test.context.assertj.AssertableWebApplicationContext
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
@@ -17,7 +16,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class CeepwsApplicationTests {
+class NoteAPIRestTests {
 
 	@Autowired
 	lateinit var mockMvc: MockMvc

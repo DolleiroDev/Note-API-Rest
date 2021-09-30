@@ -1,7 +1,7 @@
-package com.example.ceepws.controller
+package com.example.apirest.controller
 
-import com.example.ceepws.models.Note
-import com.example.ceepws.repositories.NoteRespository
+import com.example.apirest.models.Note
+import com.example.apirest.repositories.NoteRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*
 class NotaController {
 
     @Autowired
-    lateinit var noteRepository: NoteRespository
+    lateinit var noteRepository: NoteRepository
 
     @PostMapping()
     fun create(@RequestBody note: Note): Note {

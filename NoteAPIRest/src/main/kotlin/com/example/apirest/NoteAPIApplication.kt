@@ -1,11 +1,11 @@
-package com.example.ceepws
+package com.example.apirest
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CeepwsApplication
+class NoteAPIApplication
 
 fun main(args: Array<String>) {
-	runApplication<CeepwsApplication>(*args)
+	runApplication<NoteAPIApplication>(*args)
 }
